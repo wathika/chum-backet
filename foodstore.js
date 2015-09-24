@@ -38,3 +38,20 @@ function process(){
 		setTimeout("process()", 1000);    //
 	}
 }
+
+
+
+//whenever we receive a response from the server, what do we wanna do??
+function handleServerResponse() {
+	//sends an xml file
+	if (xmlHttp.readyState == 4) {
+		//if done communicating
+		if (xmlHttp.status == 200) {
+			//if session went ok
+			xmlResponse = xmlHttp.responseXML;   //pulling the xml
+			xmlDocumentELement = xmlResponse.documentELement;
+			message = xmlDocumentELement.firstChild.data;
+			document.getElementByid
+		}
+	}
+}
