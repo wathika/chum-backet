@@ -22,3 +22,15 @@ function createXmlHttpRequestObject() {
 	else
 		return xmlHttp;
 }
+
+//this process function is going to be responsible for taking an object and sending the request to the server 
+function process(){
+
+	if (xmlHttp.readyState == 0 || xmlHttp.readyState == 4) {
+		//our object is ready to communicate with the server
+		food = encodeURIComponent(document.getElementByid("userInput").value); //whatever the user typed in the box
+		
+	}else{
+
+	}
+}
